@@ -7,11 +7,24 @@
 </head>
 <body>
     <form>
-        <input type="Name" placeholder="Enter your name">
-        <input type = "password" placeholder = "enter your password">
-        <button>
-            action = "submit"
-        </button>
+        <form action="/submit-data" method="POST">
+  
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username">
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password">
+
+  <p>Choose your level:</p>
+  <input type="radio" id="beginner" name="level" value="beginner">
+  <label for="beginner">Beginner</label>
+  
+  <input type="radio" id="expert" name="level" value="expert">
+  <label for="expert">Expert</label>
+
+  <button type="submit">Sign Up</button>
+
+</form>
     </form>
 </body>
 </html>
